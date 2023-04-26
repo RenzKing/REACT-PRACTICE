@@ -31,16 +31,31 @@
 
 // ReactDOM.render(page, document.getElementById("root"));
 
-const navbar = (
-  <nav>
-    <h1>Renz JSX</h1>
+// // DECLARITIVE; //
+// const navbar = (
+//   <nav>
+//     <h1>Renz JSX</h1>
 
-    <ul>
-      <li>Menu</li>
-      <li>About</li>
-      <li>Conctact</li>
-    </ul>
-  </nav>
+//     <ul>
+//       <li>Menu</li>
+//       <li>About</li>
+//       <li>Conctact</li>
+//     </ul>
+//   </nav>
+// );
+
+// ReactDOM.render(navbar, document.getElementById("root"));
+
+const page = (
+  <div>
+    <h1>My Awesome Website in React</h1>;<h3>Reasons why I love React</h3>
+    <ol>
+      <li>It's composable</li>
+      <li>It's Declarative</li>
+      <li>It's a hireable skill</li>
+      <li>It's actively maintained by skilled people</li>
+    </ol>
+  </div>
 );
-
-ReactDOM.render(navbar, document.getElementById("root"));
+ReactDOM.render(page, document.getElementById("root"));
+// document.getElementById("root").append(JSON.stringify(page));

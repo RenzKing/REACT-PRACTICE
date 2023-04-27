@@ -190,3 +190,225 @@ to tell it HOW to do each step.
 5. What does it mean for something to be "composable"?
 We have small pieces that we can put together to make something
 larger/greater than the individual pieces. */
+
+// const project = (
+//   <div>
+//     <img src="./react-logo.png" alt="react" width="40"></img>
+//     <h1>Fun Facts about React</h1>
+//     <ul>
+//       <li>Was first released in 2013</li>
+//       <li>Was originally created by Jordan Walke</li>
+//       <li>Has well over 100K stars on Github</li>
+//       <li>Is maintained by Facebook</li>
+//       <li>Powers thousands of enterprise apps, including mobile apps</li>
+//     </ul>
+//   </div>
+// );
+
+// ReactDOM.render(project, document.getElementById("root"));
+
+// const TempoName = () => (
+//   <div>
+//     <img src="./react-logo.png" alt="react" width="40"></img>
+//     <h1>Fun Facts about React</h1>
+//     <ul>
+//       <li>Was first released in 2013</li>
+//       <li>Was originally created by Jordan Walke</li>
+//       <li>Has well over 100K stars on Github</li>
+//       <li>Is maintained by Facebook</li>
+//       <li>Powers thousands of enterprise apps, including mobile apps</li>
+//     </ul>
+//   </div>
+// );
+
+// ReactDOM.render(<TempoName />, document.getElementById("root"));
+/**
+Challenge: 
+
+Part 1: Create a page of your own using a custom Page component
+
+It should return an ordered list with the reasons why you're
+excited to be learning React :)
+
+Render your list to the page
+
+ */
+
+// const Page = () => (
+//   <div>
+//     <h1>Why I am excited in learning React!</h1>
+//     <ol>
+//       <li>It's Awesome!</li>
+//       <li>It's Fun!</li>
+//       <li>It's indemand!</li>
+//       <li>It's Amazing!</li>
+//     </ol>
+//   </div>
+// );
+
+// ReactDOM.render(<Page />, document.getElementById("root"));
+
+/**
+Challenge: 
+
+Part 2: 
+- Add a `header` element with a nested `nav` element. Inside the `nav`,
+  include a `img` element with the image of the React logo inside
+  (src="./react-logo.png") and make sure to set the width to something
+  more manageable so it doesn't take up the whole screen
+- Add an `h1` with some text describing the page. (E.g. "Reasons
+  I'm excited to learn React"). Place it above the ordered list.
+- Add a `footer` after the list that says: 
+    "© 20xx <last name here> development. All rights reserved."
+
+ */
+
+// const Page = () => (
+//   <div>
+//     <header>
+//       <nav>
+//         <img src="./react-logo.png" alt="react" width="40"></img>
+//         <ul>
+//           <li>Home</li>
+//           <li>About</li>
+//           <li>Contact</li>
+//         </ul>
+//       </nav>
+//     </header>
+
+//     <h1>Why I am excited in learning React!</h1>
+//     <ol>
+//       <li>It's Awesome!</li>
+//       <li>It's Fun!</li>
+//       <li>It's indemand!</li>
+//       <li>It's Amazing!</li>
+//     </ol>
+//     <footer>
+//       <p>© 2023 Gayacao development. All rights reserved.</p>
+//     </footer>
+//   </div>
+// );
+// ReactDOM.render(<Page />, document.getElementById("root"));
+// Quiz!
+
+// 1. What is a React component?
+// * A function that returns React elements. (UI) *
+// 2. What's wrong with this code?
+// ```* must be on PASCAL CASE*
+// function myComponent() { // function MyComponent() //
+//     return (
+//         <small>I'm tiny text!</small>
+//     )
+// }
+// ```
+
+// 3. What's wrong with this code?
+// ``` * should be < Header/> *
+// function Header() {
+//     return (
+//         <header>
+//             <nav>
+//                 <img src="./react-logo.png" width="40px" />
+//             </nav>
+//         </header>
+//     )
+// }
+
+// ReactDOM.render(Header(), document.getElementById("root"))
+// ```
+
+/**
+Mini Challenge:
+Move the `header` element from Page into 
+its own component called "Header"
+*/
+
+// const Header = () => (
+//   <div>
+//     <header>
+//       <nav>
+//         <img src="./react-logo.png" alt="react" width="40"></img>
+//         <ul>
+//           <li>Home</li>
+//           <li>About</li>
+//           <li>Contact</li>
+//         </ul>
+//       </nav>
+//     </header>
+//   </div>
+// );
+
+// const Page = () => (
+//   <div>
+//     <Header />
+//     <h1>Why I am excited in learning React!</h1>
+//     <ol>
+//       <li>It's Awesome!</li>
+//       <li>It's Fun!</li>
+//       <li>It's indemand!</li>
+//       <li>It's Amazing!</li>
+//     </ol>
+//     <footer>
+//       <p>© 2023 Gayacao development. All rights reserved.</p>
+//     </footer>
+//   </div>
+// );
+
+// ReactDOM.render(
+//   <div>
+//     <Page />
+//   </div>,
+//   document.getElementById("root")
+// );
+
+/**
+Challenge: 
+
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+*/
+
+const Header = () => (
+  <div>
+    <header>
+      <nav>
+        <img src="./react-logo.png" alt="react" width="40"></img>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+);
+
+const MainContent = () => (
+  <div>
+    <h1>Why I am excited in learning React!</h1>
+    <ol>
+      <li>It's Awesome!</li>
+      <li>It's Fun!</li>
+      <li>It's indemand!</li>
+      <li>It's Amazing!</li>
+    </ol>
+  </div>
+);
+
+const Footer = () => (
+  <footer>
+    <p>© 2023 Gayacao development. All rights reserved.</p>
+  </footer>
+);
+
+const Page = () => (
+  <div>
+    <Header />
+    <MainContent />
+    <Footer />
+  </div>
+);
+
+ReactDOM.render(<Page />, document.getElementById("root"));

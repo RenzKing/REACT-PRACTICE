@@ -68,6 +68,40 @@ appending an h1 to our div#root (without using innerHTML).
 
 // DECLARATIVE APPROACH //
 // ReactDOM.render(
-//   <h1 className="header">Hello, React!</h1>,
+//   <h1 className="header">This is an Declarative way to program</h1>,
 //   document.getElementById("root")
 // );
+
+// JSX //
+// const page = (
+//   <div>
+//     <h1 className="header">This is JSX</h1>
+//     <p>This is a paragraph</p>
+//   </div>
+// );
+// ReactDOM.render(page, document.getElementById("root"));
+
+/* 
+Challenge: 
+
+Create a navbar in JSX:
+    - Use the semantic `nav` element as the parent wrapper
+    - Have an h1 element with the brand name of your "website"
+    - Insert an unordered list for the other nav elements
+        - Inside the `ul`, have three `li`s for "Pricing",
+        "About", and "Contact"
+    - Don't worry about styling yet - it'll just be plain-looking HTML for now
+*/
+
+// const navbar = (
+//   <nav>
+//     <h1>Renz</h1>
+//     <ul>
+//       <li>Pricing</li>
+//       <li>About</li>
+//       <li>Contact</li>
+//     </ul>
+//   </nav>
+// );
+
+// ReactDOM.render(navbar, document.getElementById("root"));

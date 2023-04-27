@@ -395,7 +395,6 @@ const Header = () => (
     </header>
   </div>
 );
-
 const MainContent = () => (
   <div className="main-content">
     <h1>Why I am excited in learning React!</h1>
@@ -414,7 +413,7 @@ const Footer = () => (
   </footer>
 );
 
-const Page = () => (
+const App = () => (
   <div className="page">
     <Header />
     <MainContent />
@@ -422,4 +421,4 @@ const Page = () => (
   </div>
 );
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

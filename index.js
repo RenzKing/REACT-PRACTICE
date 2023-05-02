@@ -379,9 +379,7 @@ Challenge:
   put them inline with the React logo.
 - Change the image styling to happen in CSS instead of in-line
   For practice, add a new class to the image in order to style it
-*/
-
-const Header = () => (
+*/ const Header = () => (
   <div>
     <header>
       <nav className="nav">
